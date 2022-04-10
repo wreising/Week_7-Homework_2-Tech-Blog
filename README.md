@@ -1,1 +1,0 @@
-# Week_7-Homework_2-Tech-Blog
