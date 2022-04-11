@@ -1,8 +1,9 @@
 {
   "name": "group-project2",
   "version": "1.0.0",
-  "description": "## Recipe Manager for quick, short ingertient list, recipies.",
-  "main": "server.js",
+  "description": "## Tech Blog",
+  "main": "./public/index.html",
+  // "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
