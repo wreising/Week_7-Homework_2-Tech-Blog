@@ -34,5 +34,6 @@
   "bugs": {
     "url": "https://wreising.github.io/Week_7-Homework_2-Tech-Blog"
   },
-  "homepage": "https://wreising.github.io/Week_7-Homework_2-Tech-Blog/#readme"
+  "homepage": "https://wreising.github.io/Week_7-Homework_2-Tech-Blog/#readme",
+  "devDependencies": {}
 }
