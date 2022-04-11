@@ -1,5 +1,5 @@
 module.exports = {
-  Recipe: require('./Recipe.js'),
+  Post: require('./Posts.js'),
   User: require('./User.js')
 }
 

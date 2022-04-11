@@ -11,9 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <script defer src="./createRecipe.js"></script>
+  <script defer src="./createPost.js"></script>
+  <script defer src="./login.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  <title>Quick Cook - Easy Meals for Less</title>
+  <title>Tech Blog</title>
 </head>
 <body class="mainFont">
   <!-- Navbar -->
@@ -26,23 +27,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Categories
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="./tagBreakfast.html">Breakfast</a></li>
-              <li><a class="dropdown-item" href="./tagLunch.html">Lunch</a></li>
-              <li><a class="dropdown-item" href="./tagDinner.html">Dinner</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="./displayRecipe.html">All</a></li>
-            </ul>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="createRecipe.html">Post</a>
+            <a class="nav-link" href="createPost.html">Post</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
@@ -76,7 +62,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Log In</button>
+            <a href="./index.html" target="_blank" class="btn btn-primary">Submit</a>
         </form>
       </div>
     </div>
@@ -84,40 +70,15 @@
 </div>
   <!--====form section start====-->
   <div class="recipe-entry" style="margin: 3%;">
-    <h2 class="headerTitle">Create New Recipe</h2>
+    <h2 class="headerTitle">Create New Post</h2>
     <form>
-      <label>Recipe Name</label>
-        <input type="text" placeholder="Enter Recipe Name" name="recipe_name" required><br><br>
-      <textarea name="description" placeholder="Enter Description" class="createRecipeDescriptionBox" rows="15" columns="30"></textarea><br><br>
-      <label>Ingredient 1</label>
-        <input type="text" placeholder="Enter 1st Ingredient" name="ingredient1" required><br><br>
-      <label>Ingredient 1 Quantity</label>
-        <input type="text" placeholder="Enter Quantity" name="ing1quantity" required><br><br>
-      <label>Ingredient 2</label>
-        <input type="text" placeholder="Enter 2nd Ingredient" name="ingredient2" required><br><br>
-      <label>Ingredient 2 Quantity</label>
-        <input type="text" placeholder="Enter Quantity" name="ing2quantity" required><br><br>
-      <label>Ingredient 3</label>
-        <input type="text" placeholder="Enter 3rd Ingredient" name="ingredient3" required><br><br>
-      <label>Ingredient 3 Quantity</label>
-        <input type="text" placeholder="Enter Quantity" name="ing3quantity" required><br><br>
-      <label>Ingredient 4</label>
-        <input type="text" placeholder="Enter 4th Ingredient" name="ingredient4" required><br><br>
-      <label>Ingredient 4 Quantity</label>
-        <input type="text" placeholder="Enter Quantity" name="ing4quantity" required><br><br>
-      <label>Ingredient 5</label>
-        <input type="text" placeholder="Enter 5th Ingredient" name="ingredient5" required><br><br>
-      <label>Ingredient 5 Quantity</label>
-        <input type="text" placeholder="Enter Quantity" name="ing5quantity" required><br><br>
-      <textarea name="instructions" placeholder="Enter Instructions" class="createRecipeDescriptionBox" rows="15" columns="30"></textarea><br><br>
-          Choose Meal Type:
-        <select name="meal">
-          <option value="breakfast">Breakfast</option>
-          <option value="lunch">Lunch</option>
-          <option value="dinner">Dinner</option>
-          <option value="side">Side</option>
-        </select><br>
-      <input type="button" id="submitRecipe" value="Submit"></input>
+      <label>Post Name</label>
+        <input type="text" placeholder="Enter Post Name" name="post_name" required><br><br>
+      <label>Keywords</label>
+        <input type="text" placeholder="Enter Keywords" name="keywords" required><br><br>
+      <textarea name="postText" placeholder="Enter Post" class="createRecipeDescriptionBox" rows="15"
+          columns="30"></textarea><br><br>
+      <input type="button" id="submitPost" value="Submit"></input>
       </form>
   </div>
   </div>
